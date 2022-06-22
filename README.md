@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo]()
-- Live Site URL: [Live Site]()
+- Solution URL: [Github Repo](https://github.com/varonalearns/Huddle-landing-page-with-a-single-introductory-section)
+- Live Site URL: [Live Site](https://huddle-landing-page-with-a-single-introductory-section-henna.vercel.app/)
 
 ## My process
 
