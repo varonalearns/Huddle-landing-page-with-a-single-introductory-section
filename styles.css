@@ -1,0 +1,288 @@
+/* ------------------------------ Default Mobile Design ------------------------------ */
+
+/* -------------------- 
+    Variables
+---------------------*/
+:root {
+    /* Primary Colors */
+    --clr-main-violet: hsl(257, 40%, 49%);
+    --clr-main-magenta: hsl(300, 69%, 71%);
+
+    /* Secondary Colors */
+    --clr-white: hsl(0, 0%, 100%);
+
+    /* Fonts */
+    --ff-headings: 'Poppins', sans-serif;
+    --ff-primary: 'Open Sans', sans-serif;
+}
+
+/* -------------------- 
+    Global Styles
+---------------------*/
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--clr-main-violet);
+    color: var(--clr-white);
+    font-family: var(--ff-primary);
+}
+
+header {
+    margin: 2rem 1.25rem;
+    text-align: left;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1.25rem 4rem 1.25rem;
+    text-align: center;
+    align-items: center;
+}
+main p {
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+}
+figure {
+    margin-bottom: 1.25rem;
+}
+h1 {
+    font-family: var(--ff-headings);
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+button {
+    background-color: var(--clr-white);
+    color: var(--clr-main-violet);
+    border: none;
+    border-radius: 15px;
+    width: 60%;
+    height: 2.25rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+footer {
+    margin: 2rem;
+}
+footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer img {
+    width: 2rem;
+}
+footer a {
+    color: var(--clr-main-magenta);
+}
+
+/* -------------------- 
+    Classes Styles
+---------------------*/
+.bg-pattern {
+    background-image: url('/images/bg-mobile.svg');
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.logo {
+    width: 10rem;
+}
+.forum-mockup {
+    width: 250px;
+}
+/* ------------------------------ Lg Phone Design ------------------------------ */
+@media screen and (min-width: 375px) {
+    /* -------------------- 
+        Global Styles
+    ---------------------*/    
+    figure {
+        margin-bottom: 3rem;
+    }
+    /* -------------------- 
+        Classes Styles
+    ---------------------*/
+    .bg-pattern {
+        height: 56vh;
+    }
+    .forum-mockup {
+        width: 275px;
+    }
+}
+/* ------------------------------ Tablet Design ------------------------------ */
+@media screen and (min-width: 700px) {
+    /* -------------------- 
+        Global Styles
+    ---------------------*/    
+    header {
+        margin-bottom: 3.25rem;
+    }
+    main {
+        margin: 2rem 3.5rem;
+    }
+    button {
+        max-width: 35%;
+    }
+    footer {
+        text-align: center;
+    }
+    /* -------------------- 
+        Classes Styles
+    ---------------------*/
+    .bg-pattern {
+        height: 81vh;
+    }
+    .forum-mockup {
+        width: 650px;
+        margin-bottom: 3.25rem;
+    }
+}
+
+/* ------------------------------ Sm Desktop Design ------------------------------ */
+@media screen and (min-width: 1200px) {
+    /* -------------------- 
+        Global Styles
+    ---------------------*/    
+    header {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    main {
+        flex-direction: row;
+        text-align: left;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        align-items: flex-start;
+        height: 62vh;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    footer nav {
+        width: 50%;
+    }
+    footer ul {
+        justify-content: flex-end;
+    }
+    footer li:first-child {
+        margin-left: 0;
+    }
+    footer li {
+        margin-left: 2rem;
+    }
+    footer p {
+        text-align: left;
+    }
+    /* -------------------- 
+        Classes Styles
+    ---------------------*/
+    .bg-pattern {
+        background-image: url('/images/bg-desktop.svg');
+        height: 100vh;
+    }
+    .forum-mockup {
+        width: 600px;
+        margin-bottom: 0;
+    }
+    .content {
+        margin: 5rem 3rem; 
+    }
+}
+
+/* ------------------------------ Md Desktop Design ------------------------------ */
+@media screen and (min-width: 1440px) {
+    /* -------------------- 
+        Global Styles
+    ---------------------*/    
+    header, 
+    main, 
+    footer {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    main p {
+        line-height: 1.75;
+        margin-bottom: 2rem;
+        font-size: 1.25rem;
+    }
+    button {
+        border-radius: 25px;
+        width: 165px;
+        height: 40px;
+    }
+    /* -------------------- 
+        Classes Styles
+    ---------------------*/
+    .content {
+        margin: 3rem 5rem; 
+    }
+}
+/* ------------------------------ Lg Desktop Design ------------------------------ */
+@media screen and (min-width: 1920px) {
+    /* -------------------- 
+        Global Styles
+    ---------------------*/    
+    header, 
+    main,
+    footer {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    main {
+        height: 66vh;
+    }
+    main p {
+        line-height: 1.75;
+        margin-bottom: 2rem;
+    }
+    figure {
+        width: 100rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    button {
+        border-radius: 25px;
+        width: 12rem;
+        height: 3rem;
+        font-size: 1.25rem;
+    }
+    footer {
+        font-size: 1.25rem;
+    }
+    /* -------------------- 
+        Classes Styles
+    ---------------------*/
+    .logo {
+        width: 15rem;
+    }
+    .forum-mockup {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .content {
+        margin: 7rem 6rem; 
+    }
+}
+
